@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Pack Form Builder</title>
+    <style>
+        /* Define color scheme based on Closers Toolbox */
+        :root {
+            --background-color: #1a252f; /* Dark blue */
+            --text-color: #d3b38a;       /* Beige/gold */
+        }
+
+        /* General styling */
+        body {
+            background: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        /* Typeform container */
+        .typeform-container {
+            width: 100%;
+            max-width: 800px; /* Limit width for larger screens */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Make Typeform responsive */
+        div[data-tf-live] {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .typeform-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with title -->
+    <header>
+        <h1>Pre Pack Form Builder</h1>
+    </header>
+
+    <!-- Typeform embed -->
+    <div class="typeform-container">
+        <div data-tf-live="01JQ0YSCNDBSR89JWXF66SVGWF"></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+    </div>
+</body>
+</html>
